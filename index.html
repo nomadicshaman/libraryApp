@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Library</title>
 </head>
 <body>
     
-    <button id="btn">Add a Book</button>
+<div class="main-container">
+    <button id="bookBtn">Add Book</button>
+    <form id="new-book-form" action="">
+    <label for="title">Title</label>
+    <input type="text" id="title" value="">
+
+    <label for="author">Author</label>
+    <input type="text" id="author" value="">
+
+    <label for="pages">Pages</label>
+    <input type="text" id="pages" value="">
+
+    <label for="read">Read</label>
+    <input type="checkbox" id="read" value="">
+
+    <input type="submit" value="Add Book">
+
+    </form>
+</div>
+
+<div id="books"></div>
+
 
 </body>
 </html>

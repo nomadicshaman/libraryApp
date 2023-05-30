@@ -1,46 +1,78 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
+
+html {
+    height: 100%;
 }
+
 body {
-	line-height: 1;
-	color: black;
-	background: white;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
-ol, ul {
-	list-style: none;
+
+.main-container {
+    width: 25vw;
+    height: 50vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    margin-top: 10px;
+
+
 }
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: separate;
-	border-spacing: 0;
+
+button,
+input {
+    border-style: none;
+
 }
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
+
+input[type=text]:focus {
+    border: 1px solid #555;
+  }
+
+#bookBtn {
+    width: 200px;
+    margin: 20px;
 }
-blockquote, q {
-	quotes: "" "";
+
+form {
+    display: none;
+    
+}
+
+#books {
+    display: flex;
+}
+
+.book-cards {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    width: 100px;
+    height: 150px;    
+    
+}
+
+.card-body,
+.card-header {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
